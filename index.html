@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Registration Form</title>
+    
+   <link rel="stylesheet" href="student.css">
+    
+</head>
+<body>
+    <div>
+        <h1>Student Registration Form</h1>
+<form name="regist" action="#" method="get" onsubmit="return santhiya()">
+          <table>
+        <tr>
+            <td><label>First Name :</label></td>
+            <td><input type="text" name="first"><span id="first"></span></td>         
+        </tr>
+        <tr>
+            <td><label>Last Name :</label></td>
+            <td><input type="text" name="last"></td>       
+        </tr>
+        <tr>
+            <td> <label>Date of Birth :</label></td>
+            <td><input type="date" name="birth"></td>
+        </tr>
+        <tr>
+            <td><label>Contact Number :</label></td>
+            <td><input type="text" name="mob"></td>
+        </tr>
+        <tr>
+            <td><label>Email id :</label></td>
+            <td><input type="text" name="email"></td>
+        </tr>
+         <tr>
+            <td>
+ <label>Gender :</label></td>
+    
+      <td><label><input type="radio" name="gender" value="Male"> Male</label>
+      <label><input type="radio" name="gender" value="Female"> Female</label>
+      <label><input type="radio" name="gender" value="Other"> Other</label>
+    
+    </td></tr> 
+    <tr>
+    <td><label>Address :</label> </td>
+    <td><textarea cols="20" rows="3" name="address"></textarea></td>
+        </tr>
+         <tr>
+            <td><label>City :</label></td>
+            <td><input type="text" name="city"></td>
+        </tr>
+         <tr>
+                    <td>State :</td>
+                    <td><select id="state" name="state">
+                        <option value="Select a state">Select a state</option>
+                        <option value="Tamilnadu">Tamilnadu</option>
+                        <option value="Pune">Pune</option>
+                        <option value="New Delhi">New Delhi</option>
+                        <option value="Karnataka">Karnataka</option>
+                        <option value="Kerala">Kerala</option>
+                        <option value="Goa">Goa</option>
+                        <option value="West Bengal">West Bengal</option>
+                        <option value="Andhra Pradesh">Andhra Pradesh</option>                    
+                        <option value="Assam">Assam</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Country :</td>
+                    <td><input type="text" value="India" name="country" readonly="readonly"/></td>
+                </tr>
+        <tr>
+            <td><label>Pin Code :</label></td>
+            <td><input type="text" name="code"></td>
+        </tr>
+        <tr>
+   <tr>
+    <td>Department :</td>
+    <td>
+      <input type="checkbox" name="department" value="CSE"/> CSE
+      <input type="checkbox" name="department" value="IT"/> IT
+      <input type="checkbox" name="department" value="ECE"/> ECE
+      <input type="checkbox" name="department" value="Civil"/> Civil
+      <input type="checkbox" name="department" value="Mech"/> Mech
+      <input type="checkbox" name="department" value="B.Sc"/> B.Sc
+      <input type="checkbox" name="department" value="M.Sc"/> M.Sc
+      </td>
+  </tr>
+</tr> 
+ <tr>
+    <td>Student photo :</td>
+    <td><input type="file" name="photo"/></td>
+  </tr>
+ <tr>
+                    <td colspan="2" align="center">
+                        <input type="submit" name="submit" value="Submit"/>
+                         <input type="reset" name="reset" value="Reset" onclick="return confirmReset()"/>
+                    </td>
+                </tr>
+</table>
+ </form>
+ </div>
+<script src="student.js"></script>
+</body>
+</html>
